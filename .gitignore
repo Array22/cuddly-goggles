@@ -1,0 +1,8 @@
+#ignore csv files
+data/
+
+#ignore pycache
+__pycache__/
+
+#ignore virtual environments
+*_venv/
