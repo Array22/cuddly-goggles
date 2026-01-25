@@ -1,0 +1,2 @@
+show top gainers with minimum volume,
+show which had announcement today or past 3 days
