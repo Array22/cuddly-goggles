@@ -1,7 +1,3 @@
-- [ ] arcgis assignment
-
-- [ ] commit with git
-
 - [ ] make graph look pretty
     - [ ] tradingview like using fastapi plotly
     - [ ] dash tutorial
