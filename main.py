@@ -13,7 +13,6 @@ class Item(BaseModel):
     price: float
     is_offer: Union[bool, None] = None
 
-
 @app.get("/", response_class=HTMLResponse)
 def read_root():
     return FileResponse('test.html')
