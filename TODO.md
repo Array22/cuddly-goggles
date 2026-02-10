@@ -1,4 +1,5 @@
 - [ ] make everything into class
 
-- [ ] branch out
+- [ ] headless ui
 
+- [ ] tradingview lighweight charts instead of plotly
