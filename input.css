@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@utility tab {
+    flex-direction: row;
+    background-color: var(--color-black);
+    color: var(--color-red-200);
+}
