@@ -1,2 +1,3 @@
 show top gainers with minimum volume,
 show which had announcement today or past 3 days
+adding keywords/tags (e.g. gold, mining)

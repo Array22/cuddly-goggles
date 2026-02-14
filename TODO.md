@@ -1,5 +1,9 @@
-- [ ] make everything into class
+- [ ] drop down menu
 
-- [ ] headless ui
+- [ ] hover behaviour
+
+- [ ] react (next.js), material ui
+
+- [ ] make everything into class
 
 - [ ] tradingview lighweight charts instead of plotly
