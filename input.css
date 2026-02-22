@@ -2,8 +2,19 @@
 
 @utility tab {
     flex-direction: row;
-    background-color: var(--color-black);
-    color: var(--color-red-200);
+    background-color: var(--color-gray-300);
+    color: var(--color-black);
     border-radius: 0.25rem;
     flex: 1;
+    @variant hover {
+        background-color: var(--color-blue-400);
+        /* @apply outline-2 outline-violet-300 outline-offset-2 */
+    }
+    @variant active {
+        background-color: var(--color-blue-500)
+    }
+    @variant focus {
+        outline: 2px solid var(--color-blue-400);
+        outline-offset: 2px;
+    }
 }
