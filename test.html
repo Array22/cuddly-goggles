@@ -6,11 +6,11 @@
     <link href="./output.css" rel="stylesheet">
     <title>ASX Rising Stocks</title>
 </head>
-<body class="grid gap-3 p-2">
-    <h1 class="text-3xl text-center">
+<body class="grid grid-cols-6 gap-3 p-2">
+    <h1 class="text-3xl text-center row-span-1 col-span-full">
         ASX Website
     </h1>
-    <div class="flex space-x-1  text-center">
+    <div class="flex space-x-1  text-center col-span-full row-span-1">
         <button class = "tab">
             <p>Asx top risers</p>
         </button>
@@ -21,9 +21,18 @@
             <p>Asx top turnover</p>
         </button>    
     </div>
-    <div class="border-2 border-red-300 row-start-10 row-span-20">
-        Big Window
+    <table class="border-amber-200 border-2">
+        <thead>
+            <tr>
+                <th class="p-2">Symbol</th>
+                <th class="p-2">Growth</th>
+            </tr>
+        </thead>
+    </table>
+    <div class="border-2 border-red-300 row-span-10 col-start-3 col-span-full p-2">
+        Embedded TradingView Graph
     </div>
+
 
 </body>
 </html>
