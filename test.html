@@ -5,6 +5,7 @@
     <meta name="viewport" content "width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <title>ASX Rising Stocks</title>
+    <script src="scripts.js" defer></script>
 </head>
 <body class="grid grid-cols-6 gap-3 p-2">
     <h1 class="text-3xl text-center row-span-1 col-span-full">
@@ -18,21 +19,27 @@
             <p>Asx top turnover</p>
         </button>    
         <button class = "tab">
-            <p>Asx top turnover</p>
+            <p>Following</p>
         </button>    
     </div>
-    <table class="border-amber-200 border-2">
+    <table class="border-amber-200 border-2 col-span-2">
         <thead>
             <tr>
-                <th class="p-2">Symbol</th>
+                <th class="p-2">
+                    <button class="tab"> Symbol </button>
+                </th>
                 <th class="p-2">Growth</th>
             </tr>
         </thead>
+        <tbody>
+            <tr class="text-center">
+                <td>DTR</td>
+                <td id="stock-growth">+5%</td>
+            </tr>
+        </tbody>
     </table>
     <div class="border-2 border-red-300 row-span-10 col-start-3 col-span-full p-2">
-        Embedded TradingView Graph
+        Embedded Tradingview Graph
     </div>
-
-
 </body>
 </html>
