@@ -9,5 +9,13 @@ if (growthValue > 0) {
     stockGrowth.classList.add("text-red-600")
 }
 
-const btnSettings = document.querySelector("#btn-settings");
-btnSettings.addEventListener(click, );
+const btnStockAdd = document.querySelector("#stock-add");
+const chartTemplate = document.querySelector("#chart-widget");
+const widgetContainer = document.querySelector("#widget-container");
+
+function addWidget() {
+    const clone = chartTemplate.content.cloneNode(true);
+    widgetContainer.appendChild(clone);
+}
+
+btnStockAdd.addEventListener("click", addWidget);
