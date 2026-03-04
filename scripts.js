@@ -8,3 +8,6 @@ if (growthValue > 0) {
 } else if (growthValue < 0) {
     stockGrowth.classList.add("text-red-600")
 }
+
+const btnSettings = document.querySelector("#btn-settings");
+btnSettings.addEventListener(click, );

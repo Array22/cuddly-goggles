@@ -8,10 +8,15 @@
     <script src="scripts.js" defer></script>
 </head>
 <body class="grid grid-cols-6 gap-3 p-2">
-    <h1 class="text-3xl text-center row-span-1 col-span-full">
-        ASX Website
-    </h1>
-    <div class="flex space-x-1  text-center col-span-full row-span-1">
+    <header class="row-span-1 col-span-full flex">
+        <h1 class="text-3xl text-center flex-10">
+            ASX Website
+        </h1>
+        <button class="tab flex-1">
+            Settings
+        </button>
+    </header>
+    <nav class="flex space-x-1  text-center col-span-full row-span-1">
         <button class = "tab">
             <p>Asx top risers</p>
         </button>
@@ -21,7 +26,7 @@
         <button class = "tab">
             <p>Following</p>
         </button>    
-    </div>
+    </nav>
     <table class="border-amber-200 border-2 col-span-2">
         <thead>
             <tr>
