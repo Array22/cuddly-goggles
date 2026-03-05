@@ -20,4 +20,14 @@ function addWidget() {
 
 const btnChartClose = document.querySelector("#chart-close");
 
+function closeWidget(clickEvent) {
+    if (clickEvent.target.matches("#chart-close")) {
+        clickEvent.target.closest(".tradingview-widget-container").remove();
+    }
+}
+
+
+
+//event listeners
 btnStockAdd.addEventListener("click", addWidget);
+widgetContainer.addEventListener("click", closeWidget);
