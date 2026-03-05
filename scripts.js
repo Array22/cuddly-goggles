@@ -18,4 +18,6 @@ function addWidget() {
     widgetContainer.appendChild(clone);
 }
 
+const btnChartClose = document.querySelector("#chart-close");
+
 btnStockAdd.addEventListener("click", addWidget);

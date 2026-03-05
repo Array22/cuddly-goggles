@@ -51,43 +51,45 @@
     </button>
     <main class="border-2 border-red-300 row-span-20 col-start-3 col-span-full p-2">
         <h2 class="sr-only">Stock Chart Widget</h2>
-        <div id="widget-container"></div>
+        <div id="widget-container" class="relative">
+            <button id="chart-close" class="absolute z-10 tab -top-2 -right-2 opacity-0 hover:opacity-100">
+                Close
+            </button>
+        </div>
         <template id="chart-widget">
             <!-- TradingView Widget BEGIN -->
             <div class="tradingview-widget-container" style="height:100%;width:100%">
-            <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" 
-                rel="noopener nofollow" target="_blank">
-                <span class="blue-text">AAPL stock chart</span></a><span class="trademark"> by TradingView</span></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-            {
-            "allow_symbol_change": true,
-            "calendar": false,
-            "details": false,
-            "hide_side_toolbar": true,
-            "hide_top_toolbar": false,
-            "hide_legend": false,
-            "hide_volume": false,
-            "hotlist": false,
-            "interval": "D",
-            "locale": "en",
-            "save_image": true,
-            "style": "1",
-            "symbol": "NASDAQ:AAPL",
-            "theme": "light",
-            "timezone": "Etc/UTC",
-            "backgroundColor": "#ffffff",
-            "gridColor": "rgba(46, 46, 46, 0.06)",
-            "watchlist": [],
-            "withdateranges": false,
-            "compareSymbols": [],
-            "studies": [],
-            "autosize": true
-            }
-            </script>
+                <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener nofollow" target="_blank"><span class="blue-text">AAPL stock chart</span></a><span class="trademark"> by TradingView</span></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "allow_symbol_change": true,
+                "calendar": false,
+                "details": false,
+                "hide_side_toolbar": true,
+                "hide_top_toolbar": false,
+                "hide_legend": false,
+                "hide_volume": false,
+                "hotlist": false,
+                "interval": "D",
+                "locale": "en",
+                "save_image": true,
+                "style": "1",
+                "symbol": "NASDAQ:AAPL",
+                "theme": "light",
+                "timezone": "Etc/UTC",
+                "backgroundColor": "#ffffff",
+                "gridColor": "rgba(46, 46, 46, 0.06)",
+                "watchlist": [],
+                "withdateranges": false,
+                "compareSymbols": [],
+                "studies": [],
+                "autosize": true
+                }
+                </script>
             </div>
             <!-- TradingView Widget END -->
-        </template> 
+        </template>
     </main>
 </body>
 </html>
