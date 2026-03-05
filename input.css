@@ -4,7 +4,6 @@
     flex-direction: row;
     background-color: var(--color-gray-300);
     color: black;
-    border-radius: 0.25rem;
     flex: 1;
     @variant hover {
         background-color: var(--color-blue-400);
