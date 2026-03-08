@@ -9,40 +9,40 @@ Here’s a breakdown of some common conventional commit prefixes:
 
 feat: — For a new feature.
 
-Example: feat: add user authentication with OAuth2
+    : feat: add user authentication with OAuth2
 
 fix: — For bug fixes.
 
-Example: fix: resolve login error when incorrect password is entered
+    : fix: resolve login error when incorrect password is entered
 
 chore: — For tasks like maintenance, refactoring, or other non-functional changes (e.g., updating dependencies, configuration changes).
 
-Example: chore: update dependencies to latest versions
+    : chore: update dependencies to latest versions
 
 docs: — For changes to documentation (README, inline code comments, etc.).
 
-Example: docs: update README with installation instructions
+    : docs: update README with installation instructions
 
 style: — For code formatting changes (whitespace, missing semicolons, etc.), without affecting the actual functionality.
 
-Example: style: fix indentation in utils.py
+    : style: fix indentation in utils.py
 
 test: — For adding or modifying tests.
 
-Example: test: add unit tests for user model
+    : test: add unit tests for user model
 
 perf: — For performance improvements.
 
-Example: perf: optimize image loading for faster rendering
+    : perf: optimize image loading for faster rendering
 
 refactor: — For code changes that neither fix bugs nor add features but improve the codebase in some way (e.g., refactoring functions, improving readability).
 
-Example: refactor: simplify user validation function
+    : refactor: simplify user validation function
 
 build: — For changes related to the build process (e.g., packaging, CI/CD configuration).
 
-Example: build: update webpack config for production builds
+    : build: update webpack config for production builds
 
 ci: — For changes to continuous integration configuration.
 
-Example: ci: add GitHub Actions workflow for deployment
+    : ci: add GitHub Actions workflow for deployment
