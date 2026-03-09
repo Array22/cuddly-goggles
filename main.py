@@ -4,7 +4,6 @@ from fastapi.responses import HTMLResponse, FileResponse
 from pydantic import BaseModel
 from graphing import plot_candlestick
 import plotly.io as pio
-from pathlib import Path
 
 app = FastAPI()
 

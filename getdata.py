@@ -1,24 +1,26 @@
 import os
-import requests
+from typing import Union
 import json
 from datetime import datetime
 import csv
+import requests
 import pandas as pd
 
 API_KEY = os.getenv("EODHD_API_KEY")
 BASE_URL = "https://eodhd.com/api/eod/"
 BASE_URL_LIVE = "https://eodhd.com/api/real-time/"
 DATA_DIR = "data"
-os.makedirs(DATA_DIR, exist_ok=True)
 
-# TODO: fix params, use dict instead of manual string
-def get_eod(ticker: str, today: bool = False, fmt: str = 'csv'):
+def get_eod(ticker: str, today: bool = False, from_date: Union[str,None] = None,
+            fmt: str = 'csv'):
     """Fetches EOD data for a given ticker. If today is True, 
     fetches only today's data; otherwise, fetches a year's worth of data.
-    Returns python dict if fmt is 'json', raw text if fmt is 'csv'."""
+    Returns python dict if fmt is 'json', raw text if fmt is 'csv'.
+    from_date should be in 'YYYY-MM-DD' format if provided."""
     url = f'{BASE_URL}{ticker}.AU?'
     params = {'api_token': API_KEY,
-              'fmt': fmt}
+              'fmt': fmt,
+              'from': from_date}
     if today: #Today's data
         params['from'] = str(datetime.today().date())
     data = requests.get(url,params=params, timeout=10)
@@ -82,9 +84,10 @@ def to_lowercase(): #change headers to lowercase
   
 
 if __name__ == "__main__":
+    os.makedirs(DATA_DIR, exist_ok=True)
     # stocks = ['WTM', 'WBT', '4DX', 'AON']
     # for i in stocks:
     #     add_ticker(i)
-    print(get_eod('WTM', today=True, fmt='csv'))
+    print(get_eod('WTM', fmt='csv'))
 
     pass
