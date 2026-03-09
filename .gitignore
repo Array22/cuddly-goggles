@@ -3,9 +3,10 @@ data/
 
 #ignore pycache
 __pycache__/
+.mypy_cache/
 
 #ignore virtual environments
-*_venv/
+*venv/
 
 #ignore node modules
 node_modules/

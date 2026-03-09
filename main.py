@@ -1,9 +1,10 @@
 from typing import Union
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse, FileResponse
 from pydantic import BaseModel
 from graphing import plot_candlestick
-import plotly.io as pio
+# import plotly.io as pio
 
 app = FastAPI()
 
@@ -11,16 +12,18 @@ class Item(BaseModel):
     name: str
     price: float
     is_offer: Union[bool, None] = None
+    
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
-@app.get("/", response_class=HTMLResponse)
+@app.get("/")
 def read_root():
     return FileResponse('test.html')
 
-@app.get("/charts", response_class=HTMLResponse)
-def read_charts():
-    fig = plot_candlestick('DTR')
-    html = pio.to_html(fig)
-    return html
+# @app.get("/charts", response_class=HTMLResponse)
+# def read_charts():
+#     fig = plot_candlestick('DTR')
+#     html = pio.to_html(fig)
+#     return html
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):
