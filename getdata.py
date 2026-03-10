@@ -2,9 +2,12 @@ import os
 from typing import Union
 import json
 from datetime import datetime
+from dotenv import load_dotenv
 import csv
 import requests
 import pandas as pd
+
+load_dotenv()
 
 API_KEY = os.getenv("EODHD_API_KEY")
 BASE_URL = "https://eodhd.com/api/eod/"

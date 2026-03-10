@@ -13,3 +13,6 @@ node_modules/
 
 #ignore tailwind css output
 output.css
+
+#ignore env
+*.env
