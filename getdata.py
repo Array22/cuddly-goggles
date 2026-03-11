@@ -87,10 +87,13 @@ def to_lowercase(): #change headers to lowercase
   
 
 if __name__ == "__main__":
-    os.makedirs(DATA_DIR, exist_ok=True)
+    # os.makedirs(DATA_DIR, exist_ok=True)
     # stocks = ['WTM', 'WBT', '4DX', 'AON']
     # for i in stocks:
     #     add_ticker(i)
+    start_time = datetime.now()
     print(get_eod('WTM', fmt='csv'))
+    end_time = datetime.now()
+    print(f"Execution time: {end_time - start_time }")
 
     pass

@@ -9,10 +9,21 @@ from graphing import plot_candlestick
 app = FastAPI()
 
 class Item(BaseModel):
+    """Example item"""
     name: str
     price: float
     is_offer: Union[bool, None] = None
-    
+
+class StockData(BaseModel):
+    """Stock data from EODHD API"""
+    Date: str
+    Open: float
+    High: float
+    Low: float
+    Close: float
+    Adjusted_close: float
+    Volume: int
+  
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
