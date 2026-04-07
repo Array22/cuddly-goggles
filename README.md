@@ -6,7 +6,7 @@ Project runs using FastAPI (python)
 2. SUPABASE for storing data
 
 # Setup
-1. Run in terminal: git clone https://github.com/Array22/verbose-doodle
+1. Run in terminal: git clone https://github.com/Array22/cuddly-goggles
 2. Rename .env.example to .env and paste in your API keys.
 3. Create virtual environment and install python depedencies:
     python -m venv venv

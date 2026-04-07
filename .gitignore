@@ -1,6 +1,3 @@
-#ignore csv files
-data/
-
 #ignore pycache
 __pycache__/
 .mypy_cache/
